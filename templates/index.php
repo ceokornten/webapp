@@ -163,7 +163,7 @@ p{margin-bottom:.3em;}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/custom.css" rel="stylesheet">
 
 <body>
 
@@ -233,7 +233,7 @@ p{margin-bottom:.3em;}
 <h1mid>สั่งซื้อตอนนี้</h1mid>
 <h3> กรุณาเลือกจำนวนที่ต้องการ </h3>
 
-<form method="post" action="purchase.php">
+<form method="post" action="/static/purchase.php">
 <p>
 
 <div class="cc-selector">
