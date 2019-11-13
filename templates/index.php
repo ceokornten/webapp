@@ -1,12 +1,12 @@
-<?php include_once("/static/config.inc.php");?>
+<?php include_once("./static/config.inc.php");?>
 <html>
 
 <head>
 
-<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+<link href="./static/css/bootstrap.min.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="/static/css/bootstrap.min.css" rel="stylesheet">
-<link href="/static/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="./static/css/bootstrap.min.css" rel="stylesheet">
+<link href="./static/css/bootstrap-responsive.min.css" rel="stylesheet">
 
 
 <style>
@@ -148,9 +148,8 @@ p{margin-bottom:.3em;}
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '404279530267055');
-  fbq('init', '449376622351610');
-  fbq('track', 'PageView');
+  fbq('init', '{{px_id}}');
+  fbq('track', '{{px_track}}');
 </script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=404279530267055&ev=PageView&noscript=1"
