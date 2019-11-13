@@ -167,7 +167,7 @@ p{margin-bottom:.3em;}
 
 <body>
 
-  {{ print("Jello" }}
+  {{ print("Jello") }}
 
 <?php
 	   $sql_setting="select * from tbl_website where Id_setting=1";
