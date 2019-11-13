@@ -167,6 +167,8 @@ p{margin-bottom:.3em;}
 
 <body>
 
+  {{ 4+5 }}
+
 <?php
 	   $sql_setting="select * from tbl_website where Id_setting=1";
 								$result_setting=mysqli_query($conn,$sql_setting);
