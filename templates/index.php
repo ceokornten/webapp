@@ -1,4 +1,5 @@
 <?php include_once("./static/config.inc.php");?>
+
 <html>
 
 <head>
@@ -166,7 +167,7 @@ p{margin-bottom:.3em;}
 
 <body>
 
-  {{ 4+5 }}
+  {{ print("Jello" }}
 
 <?php
 	   $sql_setting="select * from tbl_website where Id_setting=1";
