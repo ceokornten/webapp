@@ -3,10 +3,10 @@
 
 <head>
 
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<link href="static/css/bootstrap-responsive.min.css" rel="stylesheet">
 
 
 <style>
@@ -15,7 +15,7 @@ h1 {
   color: #00ff00;
   display: block;
   font-size: 6em;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 h2 {
@@ -71,7 +71,7 @@ input[type='radio']:checked:after {
     }
 .textstyleh1{
     font-size:1em;
-} 
+}
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
@@ -154,7 +154,7 @@ p{margin-bottom:.3em;}
 </script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=404279530267055&ev=PageView&noscript=1"
-  src="https://www.facebook.com/tr?id=449376622351610&ev=PageView&noscript=1"  
+  src="https://www.facebook.com/tr?id=449376622351610&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
@@ -171,34 +171,34 @@ p{margin-bottom:.3em;}
 	   $sql_setting="select * from tbl_website where Id_setting=1";
 								$result_setting=mysqli_query($conn,$sql_setting);
 								$rs_setting=mysqli_fetch_array($result_setting);
-								$Id_setting=$rs_setting["Id_setting"];	
+								$Id_setting=$rs_setting["Id_setting"];
 								$Detail_setting=$rs_setting["Detail_setting"];
 								$Detail2_setting=$rs_setting["Detail2_setting"];
 								$Promotion=$rs_setting["Promotion"];
                                 $Detailtext_price=$rs_setting["Detailtext_price"];
-								$Price1_setting=$rs_setting["Price1_setting"];	
-								$Price2_setting=$rs_setting["Price2_setting"];	
-								$Video_setting=$rs_setting["Video_setting"];	
+								$Price1_setting=$rs_setting["Price1_setting"];
+								$Price2_setting=$rs_setting["Price2_setting"];
+								$Video_setting=$rs_setting["Video_setting"];
 								$Use_setting=$rs_setting["Use_setting"];
 								$Detailhead_setting=$rs_setting["Detailhead_setting"];
 	   ?>
-    
+
     <div class="clear"></div>
 
         <div class="description-body" style="padding:0px;">
-		
+
 
 
 		<div class="detail-block" id="detailproduct" style="padding-top:10px;">
 		<div style="padding-left:10px;padding-right:10px;">
 		<style type="text/css">
-		div#detailproduct p img 
+		div#detailproduct p img
 		{
 			width:100% !important;
             height:auto !important;
 		}
-		</style>    
-        <div class="container">    
+		</style>
+        <div class="container">
 		<?php
 			echo $str_replace = str_replace("../upload/", "upload/", $Detail_setting); //ใช้ str_replace เพื่อตัดข้อความให้แดงผล
 		?>
@@ -211,15 +211,15 @@ p{margin-bottom:.3em;}
 		<div class="detail-block" id="detailproduct" style="padding-top:10px;">
 		<div style="padding-left:10px;padding-right:10px;">
 		<style type="text/css">
-		div#detailproduct p img 
+		div#detailproduct p img
 		{
 			width:100% !important;
             height:auto !important;
 		}
-		</style>        
-       
+		</style>
+
         <div class="container">
-       
+
 		<?php
 			 echo $str_replace = str_replace("../upload/", "upload/", $Detail2_setting); //ใช้ str_replace เพื่อตัดข้อความให้แดงผล
 		?>
@@ -238,14 +238,14 @@ p{margin-bottom:.3em;}
 
 <div class="cc-selector">
 
-    
+
     <input id="bbc_one" type="radio" name="promo" value="p1" checked
         value="p1" />
     <label class="drinkcard-cc bbc_one" for="bbc_one"></label>
     <p style="font-size:20px;color:blue;">โปร!! ยาสีฟันบาบูเคลียร์ 1 หลอด ราคา 390.-</p>
     <input type="hidden" id="price1" name="price1" value="390">
     <input type="hidden" id="product1" name="product1" value="โปร!!ยาสีฟันบาบูเคลียร์ 1 หลอด">
-    
+
 
     <input id="bbc_two" type="radio" name="promo" value="p2"
         value="p2" />
@@ -291,7 +291,7 @@ p{margin-bottom:.3em;}
     for(var i = 0; i < radios.length; i++){
         radios[i].onclick = function(){
         // document.getElementById('prodselect').innerText = this.value;
-            
+
             // console.log ('Value : ' +this.value);
             checkvalue = this.value;
             // console.log ('Value XX : ' +checkvalue)
@@ -307,7 +307,7 @@ p{margin-bottom:.3em;}
                 document.getElementById('prodselect').innerText = "โปร!! ยาสีฟันบาบูเคลียร์ 5 หลอด ราคา 1,600.-";
             }
         }
-    } 
+    }
 })();
 </script>
 
@@ -347,8 +347,8 @@ p{margin-bottom:.3em;}
                     <textarea class="form-control form-control-lg" row="2" name="comment"  id="comment"
                         placeholder="ข้อความ" ></textarea>
                 </div>
-            </div>            
-            <div style="margin:auto;text-align: center;  
+            </div>
+            <div style="margin:auto;text-align: center;
                        border-radius: 8px;"><button type="submit" class="redbg btn btn-lg" > >>> กดสั่งซื้อ <<< </button></div>
                        <input type="hidden" name="sku" value="LNWOFSATI-PIG">
         </form>
@@ -372,14 +372,14 @@ var check70 = false;
 var checkcc = 1;
 
 <?php //-- Very simple variant
-$useragent = $_SERVER['HTTP_USER_AGENT']; 
-$iPod = stripos($useragent, "iPod"); 
-$iPad = stripos($useragent, "iPad"); 
+$useragent = $_SERVER['HTTP_USER_AGENT'];
+$iPod = stripos($useragent, "iPod");
+$iPad = stripos($useragent, "iPad");
 $iPhone = stripos($useragent, "iPhone");
-$Android = stripos($useragent, "Android"); 
+$Android = stripos($useragent, "Android");
 $iOS = stripos($useragent, "iOS");
 
-//-- You can add billion devices 
+//-- You can add billion devices
 
 $DEVICE = ($iPod||$iPad||$iPhone||$Android||$iOS||$webOS||$Blackberry||$IEMobile||$OperaMini);
  if ($DEVICE !=true) {?>
@@ -389,12 +389,12 @@ $DEVICE = ($iPod||$iPad||$iPhone||$Android||$iOS||$webOS||$Blackberry||$IEMobile
             checkclick = true;
             $('html, body').animate({
                  scrollTop: y + 14950
-                });      
+                });
                  fbq('trackCustom', 'ClickBuyNowPC');
         });
         <?php }
-else{ ?> 
-                <!-- What you want for all mobile devices. Anything with all HTML codes --> 
+else{ ?>
+                <!-- What you want for all mobile devices. Anything with all HTML codes -->
                 $(".bar-footer").click(function() {
                     var y = $(window).scrollTop();
                     $('html, body').animate({
@@ -416,10 +416,10 @@ $(window).scroll(function() {
     console.log('checkcc '+ checkcc);
 
     if (perc>70 && !check70 && checkcc<2) {
-        fbq('trackCustom', 'read70');  
+        fbq('trackCustom', 'read70');
         $('.bar-footer').fadeOut();
         check70 = true;
-        checkcc = 2;  
+        checkcc = 2;
     }
     if (perc< 75) {
            check70 = false;
